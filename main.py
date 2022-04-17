@@ -15,7 +15,7 @@ def read_images(file):
     images = images.reshape((len(images), IMAGE_DIMENSION, IMAGE_DIMENSION))
     images = images.astype(float)
     images = (images - 127.5) / 127.5
-    # Trim down to the first 10k examples to make for faster debugging/tuning
+    # Trim down to the first 1k examples to make for faster debugging/tuning
     # iterations.
     return images[:1000]
 
@@ -86,10 +86,10 @@ def get_generator():
 
 # Generates points in the random latent space.
 def generate_latent_points(num_samples):
-	return tf.random.normal(shape=(num_samples, LATENT_DIMENSION))
+    return tf.random.normal(shape=(num_samples, LATENT_DIMENSION))
 
 # Initialize all the variables needed for training.
-images = read_images("./banana.npy")
+images = read_images("./phone.npy")
 
 generator_optimizer = tf.keras.optimizers.Adam(1e-4)
 discriminator_optimizer = tf.keras.optimizers.Adam(1e-4)
