@@ -8,10 +8,9 @@ machine learned doodles.
 
 ## Apples
 
-![GAN learning to draw an apple](img/apple.gif | width=100)
+<img src="https://github.com/Quinny/QuickdrawGAN/blob/master/img/apple.gif" width="100">
 
 ## The Eiffel Tower
 
-![GAN learning to draw the eiffel tower](img/eiffel.gif | width=100)
-
+<img src="https://github.com/Quinny/QuickdrawGAN/blob/master/img/eiffel.gif" width="100">
 
